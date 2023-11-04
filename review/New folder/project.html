@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <titl>Project</titl>
+  <link rel="stylesheet" href="/css/project.css">
+</head>
+
+<body>
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="video/video (2160p).mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <form action="https://www.swiggy.com/">
+      <p>Welcome</p>
+      <input type="email" id="EMAIL" placeholder="Email"><br>
+      <input type="password" name="" id="PASSWORD" placeholder="Password"><br>
+
+      <input onclick="login()" type="button" value="Sign in"><br>
+      <a href="loginpage.html" >Already registered</a> 
+    </form>
+
+    <div class="drops">
+      <div class="drop drop-1"></div>
+      <div class="drop drop-2"></div>
+      <div class="drop drop-3"></div>
+      <div class="drop drop-4"></div>
+      <div class="drop drop-5"></div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+
+      const emailInput = document.getElementById('EMAIL');
+      const passwordInput = document.getElementById('PASSWORD');
+       window.location.href = 'https://www.swiggy.com';
+
+
+      if (!emailInput.value.includes('@')) {
+        alert('Invalid email address.');
+        return;
+      }
+
+
+      if (passwordInput.value.length < 6) {
+        alert('Password must be at least 6 characters long.');
+        return;
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

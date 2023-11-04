@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: rgb(58, 58, 58);
+            height: 60px;
+
+        }
+
+        .navbar li {
+            float: right;
+            list-style: none;
+            padding-top: 8px;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            padding-top: 5px;
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .logo {
+            float: left;
+            color: white;
+            padding: 20px 20px;
+            font-weight: bolder;
+        }
+
+        #paragraph {
+            color: rgb(179, 179, 11);
+            margin-left: 20px;
+            font-size: x-large;
+            padding: 30px;
+            padding-top: 80px;
+            margin-right: 40px;
+        }
+
+        .container {
+            background-color: #0e0d0d;
+            height: 615px;
+            width: 100%;
+        }
+
+        button {
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 20px;
+            width: 100px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+
+        .btn {
+            padding: 5px;
+            margin-left: 150px;
+            margin-top: 3px;
+        }
+
+        img {
+            margin-left: 125px;
+            height: 140px;
+            width: 350px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #image {
+            float: right;
+            height: 615px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <ul>
+                <li><a href="project.html" target="_blank" >Project</a></li>
+                <li><a href="aboutus.html" >About Us</a></li>
+                <li><a href="#" >Home</a></li>
+            </ul>
+            <div class="logo">
+                <p>JECRC FOUNDATION</p>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <img id="image" src="img/future.webp" alt="">
+        <div>
+            <p id="paragraph">Warm greetings to all the brilliant minds at JECRC Foundation.Your dedication and passion
+                for learning inspire us all .Wishing you an exciting and successful academic journey ahead. Keep shining
+                brightly !</p>
+        </div>
+        <div>
+            <img src="img/upflair.png" alt="">
+        </div>
+
+        <div class="btn">
+            <button>
+                <a href="aboutus.html">About Us</a>
+            </button>
+            <button>
+                <a href="project.html">Project</a>
+            </button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

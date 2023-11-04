@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(236, 248, 216);
+        }
+
+        .container {
+
+            border: 2px solid white;
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 1000px;
+            box-sizing: border-box;
+            height: 130px;
+            margin-left: 120px;
+            backdrop-filter: blur(5px);
+
+        }
+
+        h1 {
+            text-align: center;
+
+            font-style: italic;
+            font-size: 50px;
+            color: wheat;
+
+
+
+        }
+
+        h3 {
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 25px;
+            color: white;
+
+        }
+
+        p {
+            padding: 10px;
+            color: white;
+        }
+
+        .back-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            z-index: -3;
+
+        }
+
+        @media(min-aspect-ratio:16/9) {
+            .back-video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media(max-aspect-ratio: 16/9) {
+            .back-video {
+                width: auto;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="video/production_id_5091624 (1080p).mp4" type="video/mp4">
+    </video>
+    <h1>About Us</h1>
+    <div class="container">
+
+        <h3>KOMAL</h3>
+
+        <p id="firt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi fugiat minima non in? Id
+            repudiandae perferendis excepturi Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <div class="container">
+        <h3>ADITI GHIYA</h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi fugiat minima non in? Id
+            repudiandae perferendis excepturi Lorem ipsum dolor sit amet. </p>
+
+    </div>
+    <div class="container">
+        <h3>NANCY AGGARWAL</h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi fugiat minima non in? Id
+            repudiandae perferendis excepturi Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="container">
+        <h3>NITEESH KUMAR</h3>
+        <p id="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime eaque fugiat commodi
+            soluta doloribus mollitia quidem nihil ullam itaque.</p>
+    </div>
+
+</body>
+
+</html>
